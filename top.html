@@ -5,31 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="top.css">
+    <!-- <script>
+          $(function() {
+               $("#header").load("header.html");
+        });
+        </script> -->
 </head>
 <body>
-    <header>
+    <header id="header"></header>
+    <!-- <script src="header.js"></script> -->
+    <!-- <header>
+
+        <iframe src="header.html" frameborder="0"></iframe>
+    </header> -->
+    <!-- <header>
         <div class="header_main">
             <h1 class="header_name">
                 <a href="top.html">株式会社喜来製作所</a>
             </h1>
-            <nav>
-            <ul>
-                <li>
-                    <a href="top.html">ホーム</a>
-                </li>
-                <li>
-                    <a href="top.html">事業内容</a>
-                </li>
-                <li>
-                    <a href="top.html">会社紹介</a>
-                </li>
-                <li>
-                    <a href="top.html">お問い合わせ</a>
-                </li>
-            </ul>
-            </nav>
-        </div>
-    </header>
+            <ul id="nav">
+                <li><a href="top.html">トップページ</a></li>
+                <li><a href="business_content.html">会社概要</a></li>
+                <li><a href="top.html">製品紹介</a></li>
+                <li><a href="work.html">導入事例</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul> -->
+
+            <!-- <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="top.html">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="business_content.html">事業内容</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="top.html">会社紹介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="top.html" data-toggle="tab">お問い合わせ</a>
+                    </li>
+                </ul>
+            </nav> -->
+        <!-- </div>
+    </header> -->
 
     <main>
         <div class="main_container">
@@ -71,8 +90,8 @@
             </div>
         </div>
     </main>
-
-    <footer>
+    <div id="footer"></div>
+    <!-- <footer>
         <div class="kiku_footer">
             <div class="footer_left">
                 <p>株式会社喜来製作所</p>
@@ -87,6 +106,54 @@
                 <a href="top.html">お問い合わせ</a>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<!-- <script src="js/script.js"></script> -->
+
+<script script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- <script> -->
+    
+<!-- </script> -->
+<!-- <script></script> -->
+	<script>
+        // $(function () {
+        //     $("#header").load("header.html");
+        // });
+
+//         $(function(){
+//     $('#nav li a').each(function(){
+//         var $href = $(this).attr('href');
+//         if(location.href.match($href)) {
+//         $(this).addClass('active');
+//         } else {
+//         $(this).removeClass('active');
+//         }
+//     });
+// });
+// $(function(){
+    // $('.kiku_content').text("kkkkkk")
+//     $('#nav li a').each(function(){
+//         var $href = $(this).attr('href');
+//         if(location.href.match($href)) {
+//         $(this).addClass('active');
+//         } else {
+//         $(this).removeClass('active');
+//         }
+//     });
+// });
+    // $(function(){
+    //     $.ajaxSetup({cache:false});
+    //     $("#header").load("header.html");
+    // });
+		$(function(){
+			$("#header").load("file:///Users/rin90531/Desktop/kikuHP/header.html");
+            $("#footer").load("file:///Users/rin90531/Desktop/kikuHP/footer.html");
+		});
+	</script>
 </body>
 </html>

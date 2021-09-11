@@ -114,3 +114,7 @@ a.btn-border:hover {
 .footer_right {
     float: right;    
 }
+#nav li a.active    {
+    color: rgb(94, 92, 92);
+}
+        
