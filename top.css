@@ -41,96 +41,45 @@ header {
     color: rgb(94, 92, 92);
     transition: all  0.3s ease;
 }
-/* .slider_fade {
-    position: relative;
-}
- 
-.slider_fade > .slide_list {
-    position: absolute;
-    list-style: none;
-    visibility: hidden;
-    animation: anime_slider_fade 12s 0s infinite;
-}
-.slider_fade > li:nth-of-type(2) {
-    animation-delay: 4s;
-}
-
-.slider_fade > li:nth-of-type(3) {
-    animation-delay: 8s;
-}
-
-@keyframes anime_slider_fade {
-    0% {
-        visibility: visible;
-        opacity: 0;
-    }
-    15% {
-        opacity: 1;
-    }
-    33.3% {
-        opacity: 1;
-    }
-    48.3% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-} */
-
-/* .slider img,
-.slider video,
-.sliderBox iframe{
-    width: 100%;
-    height: auto;
-}
-
-.slick-slide li{
-    position: relative;
-    padding-bottom: 56.25%;
-        height: 0;
-    overflow: hidden;
-}
-
-
-.slick-slide iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
 
 .fadeslide {
 	position: relative;
-	width: 100%;
+	/* width: 100%; */
 	height: 850px;
 	overflow: hidden;
-	z-index: 0;
+    z-index: 0;
+    background: #000;
+    /* background: rgba(0, 0, 0, 0.5); */
 }
-
+video {
+    display: block;
+    opacity: 0.5;
+    width: 100%;
+}
 .fadeslide div {
 	position: absolute;
 	top: 0;
-	left: 0;
+    left: 0;
+    width: 100%;
 }
 
 .fadeslide div:nth-of-type(1) {
-	animation: fadeslide 30s 0s infinite both;
-	z-index: 6;
+	animation: fadeslide 18s 0s infinite both;
+    z-index: 3;
+    
 }
 
 .fadeslide div:nth-of-type(2) {
-	animation: fadeslide 30s 5s infinite both;
-	z-index: 5;
+	animation: fadeslide 18s 6s infinite both;
+	z-index: 2;
 }
 
 .fadeslide div:nth-of-type(3) {
-	animation: fadeslide 30s 10s infinite both;
-	z-index: 4;
+	animation: fadeslide 18s 12s infinite both;
+	z-index: 1;
 }
 
-.fadeslide div:nth-of-type(4) {
+/* .fadeslide div:nth-of-type(4) {
 	animation: fadeslide 30s 15s infinite both;
 	z-index: 3;
 }
@@ -143,15 +92,35 @@ header {
 .fadeslide div:nth-of-type(6) {
 	animation: fadeslide 30s 25s infinite both;
 	z-index: 1;
-}
+} */
 
 @keyframes fadeslide {
-	0% { left: 0; opacity: 0; }
-	5% { left: 0; opacity: 1; }
+	/* 0% { left: 0; opacity: 0; }
 	20% { left: 0; opacity: 1; }
-	25% { left: 0; opacity: 0; }
-	26% { left: 100%; opacity: 0; }
-	100% { left: 100%; opacity: 0; }
+	40% { left: 0; opacity: 0; }
+	60% { left: 0; opacity: 0; }
+	80% { left: 0%; opacity: 0; }
+    100% { left: 0%; opacity: 0; } */
+    /* 0% { left: 0; opacity: 0; }
+	50% { left: 0; opacity: 1; }
+    100% { left: 0; opacity: 0; } */
+    0% {
+        animation-timing-function: ease-in;/*ゆっくり表示される*/
+        opacity: 0;
+      }
+      12% {
+        animation-timing-function: ease-out;/*表示された*/
+        opacity: 1;
+      }
+      23% {
+        opacity: 1;/*＊表示期間*/
+      }
+      39% {
+        opacity: 0;/*次の画像で消えている*/
+      }
+      100% {
+        opacity: 0;/*表示されていない時間*/
+      }
 }
 .business_area {
     float: right;
