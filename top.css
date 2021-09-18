@@ -45,7 +45,7 @@ header {
 .fadeslide {
 	position: relative;
 	/* width: 100%; */
-	height: 850px;
+	height: 810px;
 	overflow: hidden;
     z-index: 0;
     background: #000;
@@ -95,32 +95,34 @@ video {
 } */
 
 @keyframes fadeslide {
-	/* 0% { left: 0; opacity: 0; }
-	20% { left: 0; opacity: 1; }
-	40% { left: 0; opacity: 0; }
-	60% { left: 0; opacity: 0; }
-	80% { left: 0%; opacity: 0; }
-    100% { left: 0%; opacity: 0; } */
-    /* 0% { left: 0; opacity: 0; }
-	50% { left: 0; opacity: 1; }
-    100% { left: 0; opacity: 0; } */
     0% {
         animation-timing-function: ease-in;/*ゆっくり表示される*/
         opacity: 0;
       }
-      12% {
+      17% {
         animation-timing-function: ease-out;/*表示された*/
         opacity: 1;
       }
-      23% {
-        opacity: 1;/*＊表示期間*/
+      26% {
+        opacity: 1;
       }
-      39% {
+      30% {
         opacity: 0;/*次の画像で消えている*/
       }
       100% {
         opacity: 0;/*表示されていない時間*/
       }
+}
+.top_text {
+    position: absolute;
+    top: 300px;
+    left: 40px;
+    z-index: 150;
+    font-size: 25px;
+    color: white;
+}
+.top_text span {
+    font-size: 70px;
 }
 .business_area {
     float: right;
@@ -158,8 +160,8 @@ a.btn-border:hover {
 }
 .company_about {
     /* float: right; */
-    /* margin-top: 500px; */
-    background-color: gray;
+    margin-top: 500px;
+    /* background-color: gray; */
     height: 400px;
     width: 100%;
     margin: 700px 50px 0 0;
@@ -193,4 +195,20 @@ a.btn-border:hover {
 }
 #nav li a.active    {
     color: rgb(94, 92, 92);
+}
+.product_left {
+    /* position: relative; */
+    overflow: hidden;
+}
+.product_img:hover{
+    transform:scale(1.2,1.2);
+    transition-duration: 0.6s;
+}
+.company_right {
+    /* position: relative; */
+    overflow: hidden;
+}
+.company_img:hover{
+    transform:scale(1.2,1.2);
+    transition-duration: 0.6s;
 }
