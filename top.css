@@ -165,6 +165,7 @@ a.btn-border:hover {
     height: 400px;
     width: 100%;
     margin: 700px 50px 0 0;
+    filter: drop-shadow(5px 5px 5px #aaa);
 }
 .box{
     font-weight: bold;
@@ -197,7 +198,7 @@ a.btn-border:hover {
     color: rgb(94, 92, 92);
 }
 .product_left {
-    /* position: relative; */
+    position: relative;
     overflow: hidden;
 }
 .product_img:hover{
@@ -205,10 +206,20 @@ a.btn-border:hover {
     transition-duration: 0.6s;
 }
 .company_right {
-    /* position: relative; */
+    position: relative;
     overflow: hidden;
 }
 .company_img:hover{
     transform:scale(1.2,1.2);
     transition-duration: 0.6s;
+}
+.product_index h3, .company_content h3 {
+    position: absolute;
+    top:50%;
+    left: 40%;
+    color:white;
+    background-color: #000000;
+    padding: 15px 20px;
+    opacity: 0.9;
+
 }
