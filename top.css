@@ -41,9 +41,9 @@ header {
     color: rgb(94, 92, 92);
     transition: all  0.3s ease;
 }
-
 .fadeslide {
-	position: relative;
+    position: relative;
+    top: 10px;
 	/* width: 100%; */
 	height: 810px;
 	overflow: hidden;
@@ -99,7 +99,7 @@ video {
         animation-timing-function: ease-in;/*ゆっくり表示される*/
         opacity: 0;
       }
-      17% {
+      20% {
         animation-timing-function: ease-out;/*表示された*/
         opacity: 1;
       }
@@ -126,24 +126,53 @@ video {
 }
 .business_area {
     float: right;
-    background-color: gray;
+    /* background-color: gray; */
     height: 500px;
-    width: 800px;
-    margin: 50px 50px 0 0;
-}
-.kiku_main h3, .kiku_main p {
-    padding-left: 60px;
+    width: 700px;
+    margin: 50px 0 0 0;
 }
 .business_area p {
     padding-top: 50px;
     line-height: 25px;
 }
+.elem {
+    /* position: relative; */
+    opacity: 0.1;
+    transition: 1.5s;
+    transform: translate(200px);
+  }
+  .elem_left {
+    /* position: relative; */
+    opacity: 0.1;
+    transition: 1.5s;
+    transform: translate(-200px);
+  }
+/* .product_area {
+    opacity: 0.1;
+    transition: 1.5s;
+    transform: translate(200px);
+} */
+.isAnimate {
+    opacity: 1;
+    transform: rotate(0); 
+    }
+/* CSSアニメーションの設定 */
+@keyframes SlideIn {
+0% {
+    opacity: 0;/*初期状態では透明に*/
+    transform: translateX(64px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
 .kiku_content {
-    padding: 100px 0 20px 60px;
+    padding: 100px 0 20px 0;
 }
 .business_btn {
     padding-top: 60px;
-    text-align: center;
+    /* text-align: center; */
 }
 a.btn-border {
     padding: 20px 70px;
@@ -156,7 +185,7 @@ a.btn-border {
 a.btn-border:hover {
     color: #fff;
     background: #000;
-    transition: all  0.3s ease;
+    transition: all  0.6s ease;
 }
 .company_about {
     /* float: right; */
@@ -172,24 +201,59 @@ a.btn-border:hover {
     border: solid 2px #000000;
     position: absolute;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 140px;
 }
 .main_form {
-    margin: 100px auto 0 auto;
-    width: 65%;
-    height: 200px;
+    margin: 170px auto 0 auto;
+    width: 75%;
+    height: 300px;
     padding: 0.5em 1em;
     font-weight: bold;
     border: solid 3px #000000;
     position: relative;
     bottom: 10px;
-    background-color: white;
+    background-color: rgb(29, 76, 119);
+    color: white;
+    z-index: 100;
 }
-/* .contact_left {
-    width: 50%;
-} */
+.contact_left {
+    text-align: center;
+    padding-top: 50px;
+}
+.contact_left p {
+    padding-top: 50px;
+}
 .contact_right {
-    float: right;
+    position: relative;
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 100px;
+    /* text-align: center; */
+    /* float: right; */
+}
+.tel {
+    padding-left: 15px;
+}
+.reception_time {
+    padding: 2px 0 0 50px;
+}
+.form_button {
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+    padding: 15px 70px;
+    color: black;
+    text-decoration:none; 
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #fff;
+}
+.form_button:hover {
+    transform:scale(1.1,1.1);
+    transition-duration: 0.4s;
+}
+.form_button p {
+    padding-top: 10px;
 }
 .footer_right {
     float: right;    
@@ -221,5 +285,16 @@ a.btn-border:hover {
     background-color: #000000;
     padding: 15px 20px;
     opacity: 0.9;
-
+}
+.contact_form {
+    position: relative;
+    /* z-index: 100; */
+}
+#footer {
+    position: absolute;
+    top: 144px;
+    background-color: gray;
+    padding-top: 300px;
+    width: 100%;
+    z-index:1;
 }
