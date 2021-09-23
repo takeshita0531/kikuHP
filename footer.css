@@ -1,0 +1,8 @@
+#footer {
+    /* position: absolute; */
+    /* top: 144px; */
+    background-color: gray;
+    /* margin-top: 200px; */
+    width: 100%;
+    z-index:1;
+}

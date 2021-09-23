@@ -1,3 +1,9 @@
+* {
+    margin:0; padding:0; 		/*全要素のマージン・パディングをリセット*/
+}
+main {
+    position: relative;
+}
 .contact_area {
     margin: 200px auto 0 auto;
     text-align: center;
@@ -33,10 +39,10 @@
 .contact_form h2 {
     padding-bottom: 10px;
 }
-  .box_con {
+.box_con {
     max-width: 900px;
     margin: 0  auto;
-  }
+}
   @media only screen and (max-width: 768px) {
     .box_con {
       width: 95%;
@@ -226,22 +232,22 @@
      .box_pri .box_num .txt {
       padding: 3% 0 0 3%;
     }
-  }
+}
   
-  .box_check {
+.box_check {
     text-align: center;
     margin: 1em auto;
-  }
-  .box_check label {
+}
+.box_check label {
     display: inline-block;
-  }
+}
   .box_check label span {
     margin-left: .3em;
-  }
-  .btn {
+}
+.btn {
     float: right;
-  }
-  .btn input {
+}
+.btn input {
     display: inline-block;
     /* background: #eee; */
     padding: .5em 4em;
@@ -253,9 +259,20 @@
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-  }
-  .btn input:hover {
+}
+.btn input:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.8;
-  }
-  
+}
+input, textarea {
+    background-color: #f5f4f4;
+    border: none;
+} 
+#footer {
+    position: absolute;
+    top: 144px;
+    padding-top: none;
+    margin-top: 1000px;
+    /* padding-top: none; */
+    /* z-index: 3; */
+}

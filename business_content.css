@@ -1,0 +1,22 @@
+.business_main {
+    margin: 200px auto 0 auto;
+    text-align: center;
+    width: 500px;
+}
+.our_business {
+    font-size: 80px;
+    color: rgb(29, 76, 119);
+}
+.business_img img{
+    text-align: center;
+    /* width: 500px; */
+}
+.business_content {
+    margin-top: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+.business_sentence {
+    margin-top: 40px;
+    text-align: center;
+}

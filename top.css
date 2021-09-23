@@ -189,11 +189,14 @@ a.btn-border:hover {
     filter: drop-shadow(5px 5px 5px #aaa);
 }
 .box{
+    position: relative;
     font-weight: bold;
-    border: solid 2px #000000;
+    border-top: solid 2px #000000;
     position: absolute;
     width: 100%;
     margin-top: 140px;
+    padding-top: 220px;
+    background-color: gray;
 }
 .main_form {
     margin: 170px auto 0 auto;
@@ -282,14 +285,14 @@ a.btn-border:hover {
     position: relative;
     /* z-index: 100; */
 }
-#footer {
+/* #footer {
     position: absolute;
     top: 144px;
     background-color: gray;
     padding-top: 200px;
     width: 100%;
     z-index:1;
-}
+} */
 .kiku_footer {
     color: white;
     margin-top: 50px;
@@ -344,3 +347,11 @@ a.btn-border:hover {
     text-align: center;
     font-size: 13px;
 }
+/* #footer {
+    position: absolute;
+    top: 144px;
+    background-color: gray;
+    margin-top: 200px;
+    width: 100%;
+    z-index:1;
+} */
