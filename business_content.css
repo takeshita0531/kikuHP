@@ -19,4 +19,37 @@
 .business_sentence {
     margin-top: 40px;
     text-align: center;
+    font-weight: 500;
 }
+.product_area {
+    margin-top: 100px;
+}
+.product_case {
+    text-align: center;
+}
+.img1, .img2{
+    margin-top: 50px;
+}
+.product_area img {
+    box-shadow:0px 0px 10px;
+    border:1px solid #000;
+}
+.arrow {
+    display:inline-block;
+    height:40px;
+    width:80px;
+    background-color:#746e6e;
+    position:relative;
+    top:40px;
+  }
+  
+  .arrow:before {
+    position:absolute;
+    content:"";
+    width:0;
+    height:0;
+    border:60px solid transparent;
+    border-left:30px solid #746e6e;
+    left:80px;
+    top:-37px;
+  }
