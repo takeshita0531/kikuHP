@@ -1,3 +1,6 @@
+* {
+	margin:0; padding:0; 		/*全要素のマージン・パディングをリセット*/
+}
 #footer {
     /* position: absolute; */
     /* top: 144px; */

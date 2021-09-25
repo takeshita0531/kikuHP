@@ -1,0 +1,32 @@
+.company_area {
+    margin: 200px auto 50px auto;
+    text-align: center;
+}
+.company_profile p {
+    color: rgb(29, 76, 119);
+}
+.company_info {
+    margin-top: 80px;
+}
+.company_info p {
+    color: rgb(29, 76, 119);
+    margin-bottom: 80px;
+}
+.table {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 80px;
+    font-weight: 500;
+    border-bottom: 1px solid #dee2e6;
+}
+.table td:nth-child(odd) {
+    width: 300px;
+}
+#footer {
+    position: absolute;
+    /* top: 144px; */
+    padding-top: none;
+    /* margin-top: 1000px; */
+    padding-top: none;
+    /* z-index: 3; */
+}

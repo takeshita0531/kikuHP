@@ -53,3 +53,11 @@
     left:80px;
     top:-37px;
   }
+  #footer {
+    position: absolute;
+    /* top: 144px; */
+    padding-top: none;
+    /* margin-top: 1000px; */
+    padding-top: none;
+    /* z-index: 3; */
+}
