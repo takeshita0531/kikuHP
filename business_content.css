@@ -23,9 +23,13 @@
 }
 .product_area {
     margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    background-color: rgb(179, 176, 176);
 }
 .product_case {
     text-align: center;
+    padding-top: 50px;
 }
 .img1, .img2{
     margin-top: 50px;
@@ -61,3 +65,24 @@
     padding-top: none;
     /* z-index: 3; */
 }
+.elem1 {
+    /* position: relative; */
+    opacity: 0.1;
+    transition: 1.5s;
+    transform: translateY(100px);
+  }
+  .before {
+      /* text-align: center; */
+      margin: 0 auto;
+      color: white;
+      background-color: black;
+      width: 150px;
+      padding: 15px 0;
+  }
+  .after {
+    /* color: white; */
+    margin: 0 auto;
+    background-color: white;
+    width: 150px;
+    padding: 15px 0;
+  }
