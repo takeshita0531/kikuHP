@@ -86,3 +86,7 @@
     width: 150px;
     padding: 15px 0;
   }
+.isAnimate {
+    opacity: 1;
+    transform: rotate(0); 
+}

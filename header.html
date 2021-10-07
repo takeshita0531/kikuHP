@@ -24,7 +24,7 @@
             <nav>
                 <ul id="hanburger">
                     <li class="header_list">
-                        <a class="active" href="top.html">ホーム</a>
+                        <a class="active" id="active" href="top.html">ホーム</a>
                     </li>
                     <li class="header_list">
                         <a href="business_content.html">事業内容</a>
@@ -81,11 +81,40 @@ $(function() {
 		$('#hanburger').toggleClass('active');
 	});
 });
-$(function() {
-  $('.hanburger li a').on("click", function(){
-     $('nav').removeClass('active');
-  });
+
+$(function(){
+    $('#hanburger li a').each(function(){
+        var $href = $(this).attr('href');
+        if(location.href.match($href)) {
+        $(this).addClass('active');
+        } else {
+        $(this).removeClass('active');
+        }
+    });
 });
+
+// $(function() {
+//   $('.hanburger li a').on("click", function(){
+//     //  $('nav').removeClass('active');
+//     var $href = $(this).attr('href');
+//         if(location.href.match($href)) {
+//         $(this).addClass('active');
+//         } else {
+//         $(this).removeClass('active');
+//         }
+//   });
+// });
+
+// $(function(){
+//     $('.hanburger li a').each(function(){
+//         var $href = $(this).attr('href');
+//         if(location.href.match($href)) {
+//         $(this).attr('id', 'active');
+//         } else {
+//         $(this).removeAttr('active');
+//         }
+//     });
+// });
 </script>
 </body>
 </html>
