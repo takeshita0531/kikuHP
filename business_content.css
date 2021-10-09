@@ -1,16 +1,33 @@
+main {
+    /* width:100%; */
+    overflow: hidden;
+}
+.image img{
+    width: 1500px;
+    height: 700px;
+    background-attachment: fixed;
+    /* background-color:rgba(255,255,255,0.5); */
+    /* color: #ffffff; */
+    position: fixed;
+    opacity: 0.4;
+    /* margin: 0 auto; */
+    /* transform: rotateZ( 30deg ); */
+    padding-right: 50px;
+}
 .business_main {
     margin: 200px auto 0 auto;
     text-align: center;
-    width: 500px;
+    /* width: 500px; */
 }
 .our_business {
     font-size: 80px;
     color: rgb(29, 76, 119);
 }
 .business_img img{
-    text-align: center;
-    /* width: 500px; */
+    /* text-align: center; */
+    width: 1000px;
 }
+
 .business_content {
     margin-top: 70px;
     font-size: 30px;
@@ -31,9 +48,32 @@
     text-align: center;
     padding-top: 50px;
 }
-.img1, .img2{
+.befor_after {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+.change1 {
+    margin-right: 220px;
+    text-align: center;
+}
+.change2 {
+    margin-left: 220px;
+    text-align: center;
+}
+.img1, .img2 {
     margin-top: 50px;
 }
+.img1 {
+    margin-right: 100px;
+}
+.img2 {
+    margin-left: 100px;
+}
+/* .product_img {
+    margin-right: 300px;
+} */
 .product_area img {
     box-shadow:0px 0px 10px;
     border:1px solid #000;
@@ -60,10 +100,12 @@
   #footer {
     position: absolute;
     /* top: 144px; */
-    padding-top: none;
-    /* margin-top: 1000px; */
-    padding-top: none;
+    /* padding-top: none; */
+    /* margin-top: 100px; */
+    padding-top: 300px;;
     /* z-index: 3; */
+    padding-bottom: 270px;
+    /* height: 300px; */
 }
 .elem1 {
     /* position: relative; */
@@ -90,3 +132,142 @@
     opacity: 1;
     transform: rotate(0); 
 }
+.product_wrap {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+@media screen and (max-width: 1090px) { 
+    .img1, .img2 {
+        /* text-align: center; */
+        width: 250px;
+        height: 250px;
+    }
+    .change1 {
+        margin-right: 180px;
+    }
+    .change2 {
+        margin-left: 180px;
+    }
+}
+@media screen and (max-width: 767px) { 
+    .change1 {
+        margin-right: 120px;
+    }
+    .change2 {
+        margin-left: 120px;
+    }
+    .business_img img{
+        /* text-align: center; */
+        width: 100%;
+    }
+    .our_business {
+        font-size: 60px;
+    }
+    .business_content, .business_sentence {
+        padding-top: 70px;
+        padding: 0 30px;
+        /* text-align: left; */
+        /* margin: 10px 10px; */
+    }
+    .business_content h2 {
+        font-size: 21px;
+    }
+    .business_sentence {
+        text-align: left;
+    }
+    .product_area img {
+        width: 200px;
+        height: 200px;
+    }
+    .before {
+        /* text-align: center; */
+        margin: 0 auto;
+        color: white;
+        background-color: black;
+        width: 100px;
+        padding: 15px 0;
+        font-size: 25px;
+    }
+    .after {
+        margin: 0 0 0 30px;
+        background-color: white;
+        width: 100px;
+        padding: 15px 0;
+        font-size: 25px;
+        /* margin-left: 10px; */
+    }
+    .product_case h1 {
+        font-size: 35px;
+    }
+    /* .product_item {
+        text-align: center;
+    } */
+    .row {
+        margin-right: 0;
+        margin: 30px;
+    }
+    .arrow {
+        display: inline-block;
+        height: 20px;
+        width: 40px;
+        background-color: #746e6e;
+        position: relative;
+        top: 24px;
+        margin-left: 15px;
+    }
+    .arrow:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border: 40px solid transparent;
+        border-left: 20px solid #746e6e;
+        left: 38px;
+        top: -30px;
+    }
+    /* .arrow1 {
+        display: inline-block;
+        height: 20px;
+        width: 40px;
+        background-color: #746e6e;
+        position: relative;
+        top: 55px;
+        margin-left: 15px;
+    }
+    .arrow1:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border: 40px solid transparent;
+        border-left: 20px solid #746e6e;
+        left: 38px;
+        top: -28px;
+    } */
+    .img2 {
+        margin-left: 30px;
+    }
+    .img1 {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 550px) {  
+    .product_area img {
+        width: 100px;
+        height: 100px;
+    }
+    .change1 {
+        margin-right: 40px;
+    }
+    .change2 {
+        margin-left: 40px;
+    }
+    .before, .after {
+        font-size: 17px;
+    }
+}
+
