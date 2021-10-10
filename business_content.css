@@ -2,18 +2,8 @@ main {
     /* width:100%; */
     overflow: hidden;
 }
-.image img{
-    width: 1500px;
-    height: 700px;
-    background-attachment: fixed;
-    /* background-color:rgba(255,255,255,0.5); */
-    /* color: #ffffff; */
-    position: fixed;
-    opacity: 0.4;
-    /* margin: 0 auto; */
-    /* transform: rotateZ( 30deg ); */
-    padding-right: 50px;
-}
+
+
 .business_main {
     margin: 200px auto 0 auto;
     text-align: center;
@@ -98,15 +88,16 @@ main {
     top:-37px;
   }
   #footer {
-    position: absolute;
+    /* position: absolute; */
+    /* bottom: 0; */
+    position: relative;
     /* top: 144px; */
-    /* padding-top: none; */
-    /* margin-top: 100px; */
-    padding-top: 300px;;
-    /* z-index: 3; */
-    padding-bottom: 270px;
-    /* height: 300px; */
-}
+    background-color: gray;
+    /* margin-top: 200px; */
+    width: 100%;
+    height: 220px;
+    z-index: 1;
+    }
 .elem1 {
     /* position: relative; */
     opacity: 0.1;
@@ -137,6 +128,82 @@ main {
     justify-content:center;
     align-items:center;
     width:100%;
+}
+
+.kiku_footer {
+    color: white;
+    padding-top: 50px;
+    /* margin-bottom: 20px; */
+}
+.footer_left {
+    width: 50%;
+    padding-left: 100px;
+}
+.footer_left h3 {
+    margin-bottom: 20px;
+}
+.adress {
+    margin-bottom: 0;
+}
+.footer_right {
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_right a {
+    padding-left: 20px;
+    color: white;
+    font-weight:bold;
+}
+.footer_list a {
+    font-weight:bold;
+}
+#nav_footer {
+    list-style: none;
+    position: absolute;
+    top: 100px;
+    /* bottom: 0; */
+    right: 100px;
+    /* padding-bottom: 100px; */
+}
+.footer_list {
+    float: left;
+    padding-left: 30px
+}
+.footer_list a:hover {
+    color: rgb(38, 32, 32);
+    transition: all  0.6s ease;
+}
+.footer_left a {
+    color: white;
+}
+.footer_left a:hover {
+    color: rgb(38, 32, 32);
+    transition: all  0.6s ease;
+}
+#nav_footer .footer_list a.active {
+    color: black;
+}
+.copy_right {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+@media screen and (max-width: 995px) {
+    .footer_list {
+        float: none;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    #nav_footer {
+        list-style: none;
+        position: absolute;
+        top: 20px;
+        /* bottom: 0; */
+        right: 100px;
+        /* padding-bottom: 100px; */
+    }
 }
 @media screen and (max-width: 1090px) { 
     .img1, .img2 {
@@ -252,8 +319,29 @@ main {
     .img1 {
         margin-right: 0;
     }
-}
+    #footer {
+        /* position: absolute; */
+        /* bottom: 0; */
+        /* position: absolute; */
+        /* top: 144px; */
+        background-color: gray;
+        /* margin-top: 200px; */
+        width: 100%;
+        height: 420px;
+        z-index:1;
+    }
+    #nav_footer {
+        list-style: none;
 
+        left: 10px;
+        padding-top: 5px;
+    }
+    .footer_left {
+        width: 100%;
+        padding-left: 70px;
+        padding-top: 190px;
+    }
+}
 
 @media screen and (max-width: 550px) {  
     .product_area img {

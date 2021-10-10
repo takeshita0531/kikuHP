@@ -16,7 +16,7 @@
             <div class="company_profile">
                 <h1>会社案内</h1>
                 <p>Company</p>
-                <img src="images/profile.JPG" alt="" width="1000px" height="500px">
+                <img src="images/profile.JPG" alt="">
             </div>
             <div class="company_info">
                 <h1>会社概要</h1>
@@ -25,37 +25,67 @@
             <table class="table">
                 <tbody>
                   <tr>
-                    <td class="text-left">会社名</td>
-                    <td class="text-left">株式会社喜来製作所</td>
+                    <td class="text-left"><p class="first">会社名</p></td>
+                    <td class="text-left"><p class="second">株式会社喜来製作所</p></td>
                   </tr>
                   <tr>
-                    <td class="text-left">住所</td>
-                    <td class="text-left">大阪府松原市天美西6丁目557-2</td>
+                    <td class="text-left"><p class="first">住所</p></td>
+                    <td class="text-left"><p class="second">大阪府松原市天美西6丁目557-2</p></td>
                   </tr>
                   <tr>
-                    <td class="text-left">代表者</td>
-                    <td class="text-left">竹下　利東</td>
+                    <td class="text-left"><p class="first">代表者</p></td>
+                    <td class="text-left"><p class="second">竹下　利東</p></td>
                   </tr>
                   <tr>
-                    <td class="text-left">創業</td>
-                    <td class="text-left">1971年(昭和46年)</td>
+                    <td class="text-left"><p class="first">創業</p></td>
+                    <td class="text-left"><p class="second">1971年(昭和46年)</p></td>
                   </tr>
                   <tr>
-                    <td class="text-left">資本金</td>
-                    <td class="text-left">300万</td>
+                    <td class="text-left"><p class="first">資本金</p></td>
+                    <td class="text-left"><p class="second">300万</p></td>
                   </tr>
                   <tr>
-                    <td class="text-left">従業員数</td>
-                    <td class="text-left">18名</td>
+                    <td class="text-left"><p class="first">従業員数</p></td>
+                    <td class="text-left"><p class="second">18名</p></td>
                   </tr>
                   <tr>
-                    <td class="text-left">事業内容</td>
-                    <td class="text-left">金属切削加工</td>
+                    <td class="text-left"><p class="first">事業内容</p></td>
+                    <td class="text-left"><p class="second second_last">金属切削加工</p></td>
                   </tr>
                 </tbody>
               </table>
         </div>
-          <footer id="footer"></footer>
+        <footer id="footer">
+          <div class="kiku_footer">
+              <div class="footer_left">
+                  <a href="top.html"><h3>株式会社喜来製作所</h3></a>
+                  <p class="adress">大阪府松原市天美西6丁目557-2</p>
+                  <p>TEL : 072-335-5757</p>
+              </div>
+              <div class="footer_right">
+                  <nav>
+                      <ul id="nav_footer">
+                          <li class="footer_list">
+                              <a class="active" href="top.html">ホーム</a>
+                          </li>
+                          <li class="footer_list">
+                              <a href="business_content.html">事業内容</a>
+                          </li>
+                          <li class="footer_list">
+                              <a href="company_profile.html">会社案内</a>
+                          </li>
+                          <li class="footer_list">
+                              <a href="contact_form.html">お問い合わせ</a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="copy_right">
+                  Copyright ©2021 Kiku factory Co., Ltd.
+              </div>
+          </div>
+      </footer>
+  
         
     </main>
 
@@ -66,7 +96,17 @@
     <script>
         $(function(){
             $("#header").load("file:///Users/rin90531/Desktop/kikuHP/header.html");
-            $("#footer").load("file:///Users/rin90531/Desktop/kikuHP/footer.html");
+            // $("#footer").load("file:///Users/rin90531/Desktop/kikuHP/footer.html");
+        });
+        $(function(){
+          $('#nav_footer .footer_list a').each(function(){
+              var $href = $(this).attr('href');
+              if(location.href.match($href)) {
+              $(this).addClass('active');
+              } else {
+              $(this).removeClass('active');
+              }
+          });
         });
     </script>
 </body>
