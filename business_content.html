@@ -11,9 +11,6 @@
 <body>
     
     <header id="header"></header>
-    <!-- <div class="image">
-       <img src="images/S__22470659.JPG" alt="">
-   </div> -->
     <main>
         <div class="business_main">
             <div class="business_top">
@@ -34,8 +31,22 @@
                 <h2>製品開発を行う各種金属切削のエキスパートです。</h2>
             </div>
             <div id="product" class="business_sentence">
-                <p>株式会社喜来製作所ではお客様からいただいた注文に沿って独自の手法で切削・加工・検品を行っております。
+                <p>株式会社喜来製作所では、お客様からいただいた注文に沿って独自の手法で切削・加工・検品を行っております。
                 <br>低コストで加工を行い、納期厳守、高品質が特徴であり、お客様から高評価を頂いております。</p>
+            </div>
+        </div>
+        <div class="blade_index">
+            <div class="blade_img elem_left">
+                <img src="videos/14898569536550.mp4.mov" alt="">
+            </div>
+            <div class="blade_sentence elem">
+                <h2>加工技術</h2>
+                <div class="blade_border">
+
+                </div>
+                <p>株式会社喜来製作所では、ご注文いただいた製品に適した形の刃を制作し加工を行っております。<br>
+                製品によって刃の形を変えて加工を行う柔軟性を持っております。<br>
+                これまでに、何百種もの刃を加工し製品を完成させてきた、技術と実績があります。</p>
             </div>
         </div>
 
@@ -81,6 +92,9 @@
     <footer id="footer">
         <div class="kiku_footer">
             <div class="footer_left">
+                <div class="kiku_image">
+                    <img src="images/kiku.png" alt="" width="150px" height="25px">
+                </div>
                 <a href="top.html"><h3>株式会社喜来製作所</h3></a>
                 <p class="adress">大阪府松原市天美西6丁目557-2</p>
                 <p>TEL : 072-335-5757</p>
@@ -113,20 +127,40 @@
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <!-- <script src="js/script.js"></script> -->
     <script script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $("#header").load("file:///Users/rin90531/Desktop/kikuHP/header.html");
-            // $("#footer").load("file:///Users/rin90531/Desktop/kikuHP/footer.html");
         });
 
         $(window).on('scroll', function (){
-
-        var elem = $('.elem1');
-        // var elem_left = $('.elem_left');
+        var elem_left = $('.elem_left');
+        var elem = $('.elem');
+        var elem1 = $('.elem1');
         var isAnimate = 'isAnimate';
+
+        elem1.each(function () {
+
+        var elemOffset = $(this).offset().top;
+        var scrollPos = $(window).scrollTop();
+        var wh = $(window).height();
+
+        if(scrollPos > elemOffset - wh + (wh / 2) ){
+            $(this).addClass(isAnimate);
+        }
+        });
+
+        elem_left.each(function () {
+
+        var elemOffset = $(this).offset().top;
+        var scrollPos = $(window).scrollTop();
+        var wh = $(window).height();
+
+        if(scrollPos > elemOffset - wh + (wh / 2) ){
+            $(this).addClass(isAnimate);
+        }
+        });
 
         elem.each(function () {
 
@@ -139,6 +173,8 @@
         }
         });
 
+
+
         $(function(){
             $('#nav_footer .footer_list a').each(function(){
                 var $href = $(this).attr('href');
@@ -149,19 +185,6 @@
                 }
             });
         });
-
-        // elem_left.each(function () {
-
-        // var elemOffset = $(this).offset().top;
-        // var scrollPos = $(window).scrollTop();
-        // var wh = $(window).height();
-
-        // if(scrollPos > elemOffset - wh + (wh / 2) ){
-        //     $(this).addClass(isAnimate);
-        // }
-        // });
-
-
         });
     </script>
 </body>

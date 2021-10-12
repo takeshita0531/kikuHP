@@ -55,11 +55,11 @@ header {
     padding-left: 30px
 }
 .header_list a:hover {
-    color: rgb(94, 92, 92);
+    color: rgb(253, 157, 67);
     transition: all  0.6s ease;
 }
 .header_list a.active {
-    color: rgb(94, 92, 92);
+    color: rgb(253, 157, 67);
     transition: all  0.6s ease;
 }
 @media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
@@ -101,7 +101,6 @@ header {
         width: 100%;
         padding-top: 80px;
         padding-bottom: 10px;
-        /* height: 50%; */
         /* メニューテキスト位置をリスト内中心に */
         display: flex;
         justify-content: center;
@@ -116,11 +115,10 @@ header {
         align-items: center;
     }
     .header_list a:hover {
-        color: rgb(94, 92, 92);
+        color: rgb(253, 157, 67);
         transition: all  0.6s ease;
     }
     .btn-trigger {
-        /* position: relative; */
         position: absolute;
         top: 15px;
         right: 5px;
@@ -167,7 +165,6 @@ header {
         top: 0;
         right: 100%;
         width: 100%;
-        /* height: 100%; */
         z-index: 2;
     }
     #hanburger.active{
