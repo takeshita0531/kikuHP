@@ -45,18 +45,18 @@ main {
 }
 .blade_img {
     text-align: center;
-    /* padding-right: 20px; */
 }
 .blade_sentence {
-    width: 400px;
+    width: 80%;
     line-height: 30px;
     font-weight: 500;
-    padding-left: 50px;
+    padding-left: 20px;
     padding-top: 80px;
-    padding-right: 50px;
+    padding-right: 20px;
     background-color: white;
-    margin-left: 20px;
-
+    margin: 0 auto;
+    /* margin-left: 20px; */
+    height: 500px;
 }
 .blade_sentence h2 {
     margin-bottom: 20px;
@@ -73,20 +73,22 @@ main {
     margin-bottom: 60px;
 }
 .blade_img img {
-    padding: 0 0 0 150px;
-    /* width: 100%; */
-    height: 500px;
+    padding: 0 0 0 60px;
+    width: 600px;
+    height: 600px;
 
 }
 .elem {
     opacity: 0.1;
     transition: 1.5s;
     transform: translate(200px);
+    flex-grow: 1;
 }
 .elem_left {
     opacity: 0.1;
     transition: 1.5s;
     transform: translate(-200px);
+    flex-grow: 1;
 }
 .befor_after {
     display:flex;
@@ -226,6 +228,34 @@ main {
     text-align: center;
     font-size: 13px;
 }
+@media screen and (max-width: 1230px) { 
+    .blade_img img {
+        /* margin-top: 70px; */
+        width: 500px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1090px) { 
+    .blade_img img {
+        /* margin-top: 70px; */
+        width: 400px;
+        height: 400px;
+    }
+    .blade_index {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .img1, .img2 {
+        width: 250px;
+        height: 250px;
+    }
+    .change1 {
+        margin-right: 180px;
+    }
+    .change2 {
+        margin-left: 180px;
+    }
+}
 @media screen and (max-width: 995px) {
     .footer_list {
         float: none;
@@ -238,17 +268,9 @@ main {
         top: 20px;
         right: 100px;
     }
-}
-@media screen and (max-width: 1090px) { 
-    .img1, .img2 {
-        width: 250px;
-        height: 250px;
-    }
-    .change1 {
-        margin-right: 180px;
-    }
-    .change2 {
-        margin-left: 180px;
+    .blade_index {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 @media screen and (max-width: 767px) { 
@@ -273,6 +295,23 @@ main {
     }
     .business_sentence {
         text-align: left;
+    }
+    .blade_index {
+        height: 950px;
+        display: block;
+        align-items: center;
+        /* background-color: rgb(212, 223, 245);
+        border-radius: 20px; */
+    }
+    .blade_img img{
+        width: 95%;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    .blade_sentence {
+        width: 95%;
+        margin-top: 50px;
+        height: 400px;
     }
     .product_area img {
         width: 200px;
@@ -357,6 +396,14 @@ main {
     }
     .before, .after {
         font-size: 17px;
+    }
+    .blade_index {
+        height: 990px;
+    }
+    .blade_sentence {
+        width: 95%;
+        margin-top: 50px;
+        height: 450px;
     }
 }
 
