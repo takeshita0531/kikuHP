@@ -62,14 +62,14 @@ video {
         animation-timing-function: ease-in;/*ゆっくり表示される*/
         opacity: 0;
       }
-      20% {
+      25% {
         animation-timing-function: ease-out;/*表示された*/
         opacity: 1;
       }
-      26% {
+      29% {
         opacity: 1;
       }
-      30% {
+      37% {
         opacity: 0;/*次の画像で消えている*/
       }
       100% {
